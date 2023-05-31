@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>OU Walking Club annoucements page</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="OU Walking Club annoucements page" />
+	<meta name="author" content="Hannah Hinkley" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Q2a.css"/>
+</head>
+
+<body>
+	<h1>OU Walking Club annoucements page</h1>
+	<nav>
+		<div class="nav left">Events</div>
+		<div class="nav">Membership</div>
+		<div class="nav">Annoucements</div>
+		<div class="nav right">News</div>
+	</nav>
+
+	<main>
+		<!-- Opening the form element -->
+		<form action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post" name="form1">
+			<input type="hidden" id="SessionIdentifier" name="SessionIdentifier" value="ee32-ff67-abcd1234-9090">
+
+			<!-- Input text Boxes -->
+			<label for="name">Name</label>
+			<input type="text" name="name" id="name" maxlength="30" />
+
+			<label for="subject_line">Subject Line</label>
+			<input type="text" id="subject_line" name="subject_line" maxlength="30" />
+
+			<label for="announcements">Announcements</label>
+			<textarea id="announcements" name="announcements"></textarea>
+
+			<label for="attach">Attach file</label>
+			<input type="file" id="attach" name="filename">
+			
+			<label for="date">Date to send (DD-MM-YYYY format)</label>
+			<input type="text" id="date" name="date" maxlength="10" />
+			
+			<!-- Submit and reset buttons -->
+			<button type="submit" name="submit">Submit</button>
+			<button type="reset" name="reset">Reset</button>
+		</form>
+	</main>
+	
+	<span id="css_validation">
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+			<img style="border:0;width:88px;height:31px"
+				src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+				alt="Valid CSS!" />
+		</a>
+	</span>
+</body>
+</html>
